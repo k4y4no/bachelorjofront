@@ -1,0 +1,67 @@
+header{
+    height: 5vh;
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+        background: linear-gradient(
+  to left,
+  #333333,
+  hsl(0, 0%, 93%) 75%
+
+);
+}
+ul{
+    padding: 0;
+    margin: 0;
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+li{
+    list-style-type: none;
+
+}
+.burger {
+    padding-right: 2%;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-size: larger;    
+    align-self: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.menu {
+    display: none;
+}
+
+.is-open {
+    display: flex;
+    top: 52px;
+    width: 100vw;
+    text-align: center;
+    border-bottom: 1px solid orange;
+    height: 100%;
+}
+
+a:hover {
+    background-color: green;
+    color: white;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+
+@media (min-width: 400px) {
+
+}
