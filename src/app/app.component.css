@@ -52,16 +52,37 @@ a{
     height: 100%;
 }
 
-a:hover {
+.menu a:hover {
     background-color: green;
     color: white;
 }
 
-a:active {
+.menu a:active {
     background-color: yellow;
 }
 
 
 @media (min-width: 400px) {
+
+    ul{
+    padding: 0;
+    margin: 0;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    }
+    
+    .burger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    
+    .menu a:active {
+        background-color: none;
+    }
 
 }
