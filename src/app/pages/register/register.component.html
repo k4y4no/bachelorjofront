@@ -1,0 +1,45 @@
+<form action="" [formGroup]="createUserForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Name:</label>
+        <input formControlName="nameUser">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <label>First Name:</label>
+        <input formControlName="firstNameUser">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <label>Email:</label>
+        <input formControlName="emailUser">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <label>Phone:</label>
+        <input formControlName="phoneUser">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <label>Password:</label>
+        <input formControlName="password">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <input formControlName="honeyPot">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <!-- <button type="submit" [disabled]="!profileForm.valid">Submit</button> -->
+      <button type="submit">Submit</button>
+</form>
