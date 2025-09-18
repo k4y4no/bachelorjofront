@@ -3,6 +3,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 export const routes: Routes = [
     {  path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -10,4 +12,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'offers', component: OffersComponent },
     { path: 'register', component: RegisterComponent },
+    { path: 'dash', component: DashboardComponent },
+    { path: 'profile', component: ProfileComponent },
 ];
