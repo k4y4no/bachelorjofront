@@ -1,28 +1,7 @@
-<form action="" [formGroup]="createUserForm" (ngSubmit)="onSubmit()">
-      <div>
-        <label>Name:</label>
-        <input formControlName="name">
-        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
-          First name is required
-        </span> -->
-      </div>
-      <div>
-        <label>First Name:</label>
-        <input formControlName="firstname">
-        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
-          First name is required
-        </span> -->
-      </div>
+<form action="" [formGroup]="loginUserForm" (ngSubmit)="onSubmit()">
       <div>
         <label>Email:</label>
         <input formControlName="email">
-        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
-          First name is required
-        </span> -->
-      </div>
-      <div>
-        <label>Phone:</label>
-        <input formControlName="phone">
         <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
           First name is required
         </span> -->
