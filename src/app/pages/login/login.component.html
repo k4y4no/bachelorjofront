@@ -1,1 +1,24 @@
-<p>login works!</p>
+<form action="" [formGroup]="loginUserForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Email:</label>
+        <input formControlName="email">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <label>Password:</label>
+        <input formControlName="password">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <div>
+        <input id="honeyPot">
+        <!-- <span *ngIf="profileForm.get('firstName').invalid && profileForm.get('firstName').touched">
+          First name is required
+        </span> -->
+      </div>
+      <!-- <button type="submit" [disabled]="!profileForm.valid">Submit</button> -->
+      <button type="submit">Submit</button>
+</form>
