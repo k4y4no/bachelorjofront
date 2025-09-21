@@ -1,1 +1,6 @@
 <p>home works!</p>
+    <ul>
+      @for (game of games$| async ; track game.id) {
+        <li>{{ game.id }} {{ game.name }}</li>
+      }
+    </ul>
