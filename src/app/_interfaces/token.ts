@@ -6,6 +6,7 @@ export interface Token {
 
 export interface TokenPayload {
     sub: string;
+    id_sub: string;
     role: string;
     exp: Date;
 }

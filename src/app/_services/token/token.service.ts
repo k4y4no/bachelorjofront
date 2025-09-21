@@ -32,4 +32,10 @@ export class TokenService {
     return expDateToken !=null ?console.log(expDateToken.sub):null
 
   }
+
+  getIdSubToken(token: string | null) {
+    const expDateToken: TokenPayload | null = this.tokenDecoder(token)
+    return expDateToken !=null ?Number(expDateToken.id_sub):null
+
+  }
 }

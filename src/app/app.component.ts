@@ -54,7 +54,7 @@ export class AppComponent implements OnInit{
 
   loggingOut(){
     this.authService.logout();
-    this.router.navigate(['login'])
+    this.router.navigate(['/login'])
   }
 
   @HostListener('window:resize', ['$event'])
