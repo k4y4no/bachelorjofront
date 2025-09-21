@@ -1,1 +1,6 @@
 <p>offers works!</p>
+    <ul>
+      @for (offer of offers$| async ; track offer.id) {
+        <li>{{ offer.id }} {{ offer.name }}</li>
+      }
+    </ul>
