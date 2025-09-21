@@ -1,0 +1,9 @@
+:host{display: flex;}
+#joOffers{
+    flex-basis: 70%;
+}
+#joCart{
+    border: 1px solid black;
+    border-radius: 10%;
+    flex-basis: 30%;
+}
