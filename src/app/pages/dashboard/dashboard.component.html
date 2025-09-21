@@ -1,1 +1,14 @@
 <p>dashboard works!</p>
+<ul>
+    <li (click)="changePannel('stat')">Statistiques</li>
+    <li (click)="changePannel('crud')">Gestion des offres</li>
+</ul>
+@if(pannel === "stat"){
+    <section>
+        <h2>Offres statistiques</h2>
+    </section>
+} @if(pannel === "crud") {
+    <section>
+        <h2>Gestion des offres</h2>
+    </section>
+}
