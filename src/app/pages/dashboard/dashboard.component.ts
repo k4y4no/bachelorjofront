@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+  pannel: string = "stat";
 
+  changePannel(pannelName: string) {
+    this.pannel = pannelName
+  }
 }
