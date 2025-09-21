@@ -34,8 +34,7 @@ export class AppComponent implements OnInit{
         } else {
           this.profileOn = "register"
         }
-        console.log(this.isAuthenticated)
-        console.log(this.isAdmin)
+
 
       }
     })
@@ -43,7 +42,6 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth
-    console.log(this.innerWidth)
   }
 
   toggleMenu(): void{
