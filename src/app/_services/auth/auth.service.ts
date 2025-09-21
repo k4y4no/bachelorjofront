@@ -10,7 +10,7 @@ export class AuthService {
 
   private http = inject(HttpClient);
 
-  readonly authUrl = 'http://127.0.0.1:8000/user';
+  readonly authUrl = 'http://127.0.0.1:8000/auth';
 
   constructor() { }
 

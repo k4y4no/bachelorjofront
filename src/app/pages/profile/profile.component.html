@@ -1,1 +1,9 @@
 <p>profile works!</p>
+      @if (user$ | async ; as user) {
+        <h2>{{user.name}}</h2>
+        <ul>
+            <li>ID: {{user.id}}</li>
+            <li>Email: {{user.email}}</li>
+            <li>Phone: {{user.phone}}</li>
+        </ul>
+      }

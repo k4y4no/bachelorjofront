@@ -13,6 +13,7 @@ export interface UserPublic {
     firstname: string;
     email: string;
     phone: string;
+    role: string;
 }
 
 
