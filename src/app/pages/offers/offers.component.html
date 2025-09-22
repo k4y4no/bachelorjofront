@@ -1,6 +1,12 @@
-<p>offers works!</p>
-    <ul>
+<section id="joOffers">
+      <ul>
       @for (offer of offers$| async ; track offer.id) {
-        <li>{{ offer.id }} {{ offer.name }}</li>
+        <li (click)="addToCart(offer)">{{ offer.id }} {{ offer.name }}</li>
       }
     </ul>
+</section>
+@if(user$ | async ; as user){
+  <section id="joCart">
+    <app-shopping-cart></app-shopping-cart>
+  </section>
+}

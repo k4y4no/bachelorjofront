@@ -1,0 +1,8 @@
+<h2>shopping-cart works!</h2>
+<p>{{cartService.cartItems().length}}</p>
+<ul>
+    @for (item of cartService.cartItems(); track $index) {
+        <li>{{item.offer.name}} - {{10 | currency : 'CHF'}} </li>
+    }
+</ul>
+<p>Total: {{cartService.totalAmount()}}</p>
